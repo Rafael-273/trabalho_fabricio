@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script href="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <button id="neon-button">Clique aqui</button>
+
+    <div class="modal">
+        <h5>Modal Aberto</h5>
+    </div>
+
+    <script>
+        const neonButton = document.querySelector('#neon-button');
+        const modal = document.querySelector('.modal');
+
+        neonButton.addEventListener('click', function() {
+        modal.classList.add('show');
+        console.log('teste')
+        });
+
+        modal.addEventListener('click', function(event) {
+        if (event.target === modal || event.target.classList.contains('close')) {
+            modal.classList.remove('show');
+        }
+        });
+    </script>
+</body>
+</html>

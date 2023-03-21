@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#neon-button {
+    background: linear-gradient(to right, #d400ff, #8d36ff);
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 35px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+#neon-button:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+    position: fixed;
+    left: 44%;
+    top: 45%;
+}
+
+.modal {
+    background-color: aliceblue;
+    width: 50%;
+    height: 15vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 35%;
+    display: none;
+}
+
+.modal.show {
+    display: flex;
+}
+
+#modal h5 {
+    font-size: 30px;
+}
